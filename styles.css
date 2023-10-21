@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+} 
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+.working-area{
+    width: 80%;
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    padding: 3vmax 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 5vmax;
+}
+.nleft, .nright{
+    display: flex;
+    align-items: center;
+    gap: 4vmax;
+}
+#nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1vmax;
+    font-weight: 600;
+    letter-spacing: 1px;
+    pointer-events: all;
+}
+#hero{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+#hero-left{
+    min-width: 50%;
+}
+#hero-left .elem{
+    position: relative;
+    height: 9vmax;
+    overflow: hidden;
+}
+#hero-left .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vmax;
+    text-transform: uppercase;
+}
+#hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+#hero-left button{
+    pointer-events: all;
+    padding: .8vmax 3vmax;
+    font-size: 3vmax;
+    margin-top: 2vmax;
+    font-family: "kajiro";
+}
+#hero-right{
+    width: 17%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#hero-right p{
+    font-size: 1vmax;
+    font-weight: 300;
+    text-align: right;
+}
+#hero-right .image-div{
+    width: 100%;
+    height: 11vmax;
+    margin-top: .8vmax;
+    margin-bottom: 1.2vmax;
+    background-image: url("https://images.unsplash.com/photo-1525299374597-911581e1bdef?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+#hero-right p:nth-child(3){
+    margin-bottom: 2vmax;
+}
